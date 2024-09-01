@@ -1,0 +1,66 @@
+export default function UsagePage() {
+  return (
+    <main class="w-full text-secondary bg-primary">
+      <ol class="w-full flex flex-col items-center text-center *:h-svh *:p-4">
+        <li>
+          <p>
+            1.PC/スマホの前にみんなであつまり、ツールバーからマスをえらびます。
+          </p>
+          <img
+            src="/usage-making-toolbar.png"
+            alt="ツールバーの説明用画像"
+            width="100%"
+          />
+        </li>
+        <li>
+          <p>2.ボードをクリックしてマスをおきます。</p>
+          <img
+            src="/usage-making-board.png"
+            alt="ボードの説明用画像"
+            width="100%"
+          />
+        </li>
+        <li>
+          <p>3.すごろくができたら「あそぶ！」ボタンをクリックしてください。</p>
+          <img
+            src="/usage-making-play-button.png"
+            alt="あそぶ！ボタンの説明用画像"
+            width="100%"
+          />
+        </li>
+        <li>
+          <p>4.「-1」と「+1」ボタンでプレイ人数をえらびます。</p>
+          <img
+            src="/usage-playing-player-cnt.png"
+            alt="プレイ人数の増やし方と減らし方の説明用画像"
+            width="100%"
+          />
+        </li>
+        <li>
+          <p>5.「ロール！」ボタンでサイコロがまわりはじめます。</p>
+          <img
+            src="/usage-playing-roll.png"
+            alt="ロール！ボタンの説明用画像"
+            width="100%"
+          />
+        </li>
+        <li>
+          <p>6.「とめる！」ボタンで出た目だけプレイヤーがすすみます。</p>
+          <img
+            src="/usage-playing-stop.png"
+            alt="とめる！ボタンの説明用画像"
+            width="100%"
+          />
+        </li>
+        <li>
+          <p>7.プレイヤーがゴールするとランキングが表示されます。</p>
+          <img
+            src="/usage-playing-ranking.png"
+            alt="ランキングの説明用画像"
+            width="100%"
+          />
+        </li>
+      </ol>
+    </main>
+  );
+}
