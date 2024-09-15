@@ -42,18 +42,53 @@ export default function Board(
   // console.log(players.value);
 
   return (
-    <article class="h-4/6 md:h-5/6 aspect-square md:aspect-auto text-[.65rem] md:text-base  relative grid grid-cols-8 border-4 border-slate-700">
+    <article
+      class="h-4/6 md:h-5/6 aspect-square md:aspect-auto text-[.65rem] md:text-base  relative grid grid-cols-8 border-4 border-slate-700"
+      // モバイル、子要素に指定すると要素またぎがうまく動作しない。
+      onTouchMove={mode.value === "playing" ? () => {} : (event) => {
+        // スクロールを防ぐ
+        event.preventDefault();
+        // 0本目の指のタッチ
+        const touch = event.touches[0];
+        // z-indexで最上部にある要素を指の位置から取得する
+        const touchedCell = document.elementFromPoint(touch.pageX, touch.pageY);
+        // 範囲外をreturnする
+        if (
+          touchedCell === null ||
+          getComputedStyle(touchedCell).getPropertyValue("--row-num") === "" ||
+          getComputedStyle(touchedCell).getPropertyValue("--col-num") === ""
+        ) {
+          return;
+        }
+        const rowNum = Number(
+          getComputedStyle(touchedCell).getPropertyValue("--row-num"),
+        );
+        const colNum = Number(
+          getComputedStyle(touchedCell).getPropertyValue("--col-num"),
+        );
+        handleCellClick({ rowNum, colNum });
+      }}
+    >
       {board.value.map((row, rowNum) =>
         row.map((cell, colNum) => (
           <button
+            style={`--row-num: ${rowNum}; --col-num: ${colNum};`}
             class={`aspect-square relative border-2 ${
               mode.value === "playing"
                 ? "cursor-default"
                 : "hover:border-secondary hover:border-dotted"
             } ${cell ? "border-secondary bg-slate-200" : "border-slate-200"}`}
-            onClick={mode.value === "playing"
-              ? () => {}
-              : (_event) => handleCellClick({ rowNum, colNum })}
+            // PC
+            // ヒットテスト領域内で押したとき(押したマス)
+            onPointerDown={mode.value === "playing" ? () => {} : (_event) => {
+              // console.log("pointerDown");
+              handleCellClick({ rowNum, colNum });
+            }}
+            // ヒットテスト領域内に入ったとき(押したままスワイプしたマス)
+            onPointerOver={mode.value === "playing" ? () => {} : (event) => {
+              // console.log(event.buttons);
+              event.buttons % 2 === 1 && handleCellClick({ rowNum, colNum });
+            }}
           >
             {cell && cell !== "ノーマル" && cell}
             {players.value.filter((player) =>
