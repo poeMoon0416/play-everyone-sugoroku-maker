@@ -1,16 +1,21 @@
-# Fresh project
+# みんなであそべるすごろくメーカー🎲
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+- [公開ページ](https://everyone-sugoroku-maker.deno.dev)
+- [Qiita記事](https://qiita.com/poeMoon/items/973871f647ad5c351d5d)
+- [X(旧Twitter)](https://x.com/_poeMoon_)
 
-### Usage
+### 9/16 スワイプ機能追加👆
 
-Make sure to install Deno: https://deno.land/manual/getting_started/installation
+「つくってあそぶ」ページでPC/モバイルからボードをなぞってマスを配置できるようにして操作感を改善しました。<br>
+![スワイプ機能のデモ動画gif](./static/readme/swipe-demo.gif)
 
-Then start the project:
+### 9/1 「あそびかた」ページ追加📄
 
-```
-deno task start
-```
+すごろくをつくってあそぶための一連の操作に対する説明を追加して分かりやすくしました。<br>
+![「あそびかた」ページの画像](./static/readme/usage.png)
 
-This will watch the project directory and restart as necessary.
+### 8/26 リリース✨
+
+すごろくをつくってあそぶために必要なコア機能を開発して公開しました。<br>
+![「つくってあそぶ」ページのつくるときの画像](./static/readme/making.png)
+![「つくってあそぶ」ページのあそぶときの画像](./static/readme/playing.png)
