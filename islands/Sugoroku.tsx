@@ -33,7 +33,9 @@ export default function Sugoroku({ url }: SugorokuProps) {
   const wsRef = useRef<WebSocket | null>(null);
   useEffect(() => {
     const roomId = (new URL(url)).pathname.split("/").pop();
-    const ws = new WebSocket(`ws://${(new URL(url)).host}/ws/${roomId}`);
+    // 安全性の関係でデプロイ環境だとwssじゃないと動かないようになっているっぽい。
+    // ローカルだとhttp/httpsの関係で逆なので注意！
+    const ws = new WebSocket(`wss://${(new URL(url)).host}/ws/${roomId}`);
     wsRef.current = ws;
 
     ws.onmessage = (event) => {
