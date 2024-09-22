@@ -6,7 +6,9 @@ import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $_layout from "./routes/_layout.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $room_room_ from "./routes/room/[room].tsx";
 import * as $usage from "./routes/usage.tsx";
+import * as $ws_room_ from "./routes/ws/[room].ts";
 import * as $Sugoroku from "./islands/Sugoroku.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
@@ -16,7 +18,9 @@ const manifest = {
     "./routes/_app.tsx": $_app,
     "./routes/_layout.tsx": $_layout,
     "./routes/index.tsx": $index,
+    "./routes/room/[room].tsx": $room_room_,
     "./routes/usage.tsx": $usage,
+    "./routes/ws/[room].ts": $ws_room_,
   },
   islands: {
     "./islands/Sugoroku.tsx": $Sugoroku,

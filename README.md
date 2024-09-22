@@ -4,6 +4,11 @@
 - [Qiita記事](https://qiita.com/poeMoon/items/973871f647ad5c351d5d)
 - [X(旧Twitter)](https://x.com/_poeMoon_)
 
+### 9/23 オンライン機能追加🌐
+
+「つくってあそぶ」ページで同じURL(ルーム)にアクセスすればオンラインプレイできるようにしました。<br>
+![オンライン機能のデモ動画gif](./static/readme/online-play-demo.gif)
+
 ### 9/16 スワイプ機能追加👆
 
 「つくってあそぶ」ページでPC/モバイルからボードをなぞってマスを配置できるようにして操作感を改善しました。<br>

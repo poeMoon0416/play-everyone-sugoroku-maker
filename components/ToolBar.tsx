@@ -3,10 +3,11 @@ import { Tool } from "../utils/SugorokuUtils.ts";
 
 interface ToolBarProps {
   selectedTool: Signal<Tool>;
+  handleSelectTool: (event: MouseEvent) => void;
 }
 
 export default function ToolBar(
-  { selectedTool }: ToolBarProps,
+  { selectedTool, handleSelectTool }: ToolBarProps,
 ) {
   const TOOLS: Tool[] = [
     "ノーマル",
@@ -26,8 +27,7 @@ export default function ToolBar(
           class={`hover:text-acsent ${
             tool === selectedTool.value ? "text-acsent" : ""
           }`}
-          onClick={(event) =>
-            selectedTool.value = event.currentTarget.value as Tool}
+          onClick={handleSelectTool}
         >
           {tool ? tool : "とりけし"}
         </button>
