@@ -11,7 +11,8 @@ export const handler: Handlers = {
 export default function MakingPlayPage({ data }: PageProps) {
   // onClick等はislandsに書く
   return (
-    <main class="flex-1 flex flex-col justify-center items-center p-4 gap-4 text-secondary bg-primary">
+    // touch-none: ブラウザによるダブルタップ拡大やスクロールを防ぐ、防ぎたい最上位要素に指定
+    <main class="touch-none flex-1 flex flex-col justify-center items-center p-4 gap-4 text-secondary bg-primary">
       <Sugoroku url={data.url} />
     </main>
   );

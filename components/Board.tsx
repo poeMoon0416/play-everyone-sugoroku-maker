@@ -32,6 +32,8 @@ export default function Board(
       {board.value.map((row, rowNum) =>
         row.map((cell, colNum) => (
           <button
+            id="board-cell"
+            aria-label={`${rowNum}行${colNum}列`}
             style={`--row-num: ${rowNum}; --col-num: ${colNum};`}
             class={`aspect-square relative border-2 ${
               mode.value === "playing"
@@ -64,7 +66,7 @@ export default function Board(
         <img
           src={rolling.value && players.value[idx].isCurrent
             ? "/rolling-dice.gif"
-            : `/dice-${players.value[idx].dice}.png`}
+            : `/dice-${players.value[idx].dice}.webp`}
           alt="プレイヤーのサイコロ"
           width="15%"
           class={`z-10 absolute aspect-square object-contain ${pos}`}

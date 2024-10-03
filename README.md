@@ -17,10 +17,10 @@
 ### 9/1 「あそびかた」ページ追加📄
 
 すごろくをつくってあそぶための一連の操作に対する説明を追加して分かりやすくしました。<br>
-![「あそびかた」ページの画像](./static/readme/usage.png)
+![「あそびかた」ページの画像](./static/readme/usage.webp)
 
 ### 8/26 リリース✨
 
 すごろくをつくってあそぶために必要なコア機能を開発して公開しました。<br>
-![「つくってあそぶ」ページのつくるときの画像](./static/readme/making.png)
-![「つくってあそぶ」ページのあそぶときの画像](./static/readme/playing.png)
+![「つくってあそぶ」ページのつくるときの画像](./static/readme/making.webp)
+![「つくってあそぶ」ページのあそぶときの画像](./static/readme/playing.webp)

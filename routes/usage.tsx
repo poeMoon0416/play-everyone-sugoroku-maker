@@ -7,7 +7,7 @@ export default function UsagePage() {
             1.みんなでおなじURL(ルーム)にアクセスします。
           </p>
           <img
-            src="/usage-online-play.png"
+            src="/usage-online-play.webp"
             alt="オンラインプレイの説明用画像"
             width="100%"
           />
@@ -17,7 +17,7 @@ export default function UsagePage() {
             2.ツールバーからマスをえらびます。
           </p>
           <img
-            src="/usage-making-toolbar.png"
+            src="/usage-making-toolbar.webp"
             alt="ツールバーの説明用画像"
             width="100%"
           />
@@ -25,7 +25,7 @@ export default function UsagePage() {
         <li>
           <p>3.ボードをクリックしてマスをおきます。</p>
           <img
-            src="/usage-making-board.png"
+            src="/usage-making-board.webp"
             alt="ボードの説明用画像"
             width="100%"
           />
@@ -33,7 +33,7 @@ export default function UsagePage() {
         <li>
           <p>4.すごろくができたら「あそぶ！」ボタンをクリックしてください。</p>
           <img
-            src="/usage-making-play-button.png"
+            src="/usage-making-play-button.webp"
             alt="あそぶ！ボタンの説明用画像"
             width="100%"
           />
@@ -41,7 +41,7 @@ export default function UsagePage() {
         <li>
           <p>5.「-1」と「+1」ボタンでプレイ人数をえらびます。</p>
           <img
-            src="/usage-playing-player-cnt.png"
+            src="/usage-playing-player-cnt.webp"
             alt="プレイ人数の増やし方と減らし方の説明用画像"
             width="100%"
           />
@@ -49,7 +49,7 @@ export default function UsagePage() {
         <li>
           <p>6.「ロール！」ボタンでサイコロがまわりはじめます。</p>
           <img
-            src="/usage-playing-roll.png"
+            src="/usage-playing-roll.webp"
             alt="ロール！ボタンの説明用画像"
             width="100%"
           />
@@ -57,7 +57,7 @@ export default function UsagePage() {
         <li>
           <p>7.「とめる！」ボタンで出た目だけプレイヤーがすすみます。</p>
           <img
-            src="/usage-playing-stop.png"
+            src="/usage-playing-stop.webp"
             alt="とめる！ボタンの説明用画像"
             width="100%"
           />
@@ -65,7 +65,7 @@ export default function UsagePage() {
         <li>
           <p>8.プレイヤーがゴールするとランキングが表示されます。</p>
           <img
-            src="/usage-playing-ranking.png"
+            src="/usage-playing-ranking.webp"
             alt="ランキングの説明用画像"
             width="100%"
           />
